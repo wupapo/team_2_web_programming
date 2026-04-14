@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Tech - Order Summary</title>
+    <meta name="description" content="Review your extracted order details.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="logo-text">AURA <span class="text-primary">TECH</span></a>
+        </div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="order.html">Order Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="section-title">Order Received Summary</h1>
+        <p class="summary-subtitle">
+            Your order details have been dynamically processed and rendered.
+        </p>
+        
+        <div class="form-panel summary-panel">
+            <div id="summary-table-container" class="summary-container">
+                <!-- JavaScript DOM API injects table here -->
+            </div>
+            
+            <div class="summary-actions">
+                <a href="order.html" class="btn btn-secondary" aria-label="Edit Order">Edit Order</a>
+                <button type="button" class="btn" id="confirm-pay-btn" aria-label="Confirm and Pay">Confirm & Pay</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Aura Tech Store. Designed with precision.</p>
+            <a href="#top" class="back-to-top" aria-label="Scroll back to top of the page">Back to Top</a>
+        </div>
+    </footer>
+
+    <!-- Script to trigger table population -->
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>

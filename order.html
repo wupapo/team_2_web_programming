@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Tech - Order Form</title>
+    <meta name="description" content="Place a new order for our tech products using this form.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="logo-text">AURA <span class="text-primary">TECH</span></a>
+        </div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="order.html" class="active" aria-current="page">Order Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="section-title">Place Your Order</h1>
+        
+        <form id="tech-order-form" class="form-panel">
+            <div class="form-group">
+                <label for="full_name">Full Name</label>
+                <input type="text" id="full_name" name="full_name" class="form-control" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" required placeholder="johndoe@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="product_selection">Select Product</label>
+                <select id="product_selection" name="product_selection" class="form-control" required>
+                    <option value="" disabled selected>-- Choose a Device --</option>
+                    <option value="Phantom X Smartphone">Phantom X Smartphone</option>
+                    <option value="Aether Studio Headphones">Aether Studio Headphones</option>
+                    <option value="Chronos Fit Watch">Chronos Fit Watch</option>
+                    <option value="Quantum Core Laptop">Quantum Core Laptop</option>
+                    <option value="Odyssey Gen 5 Console">Odyssey Gen 5 Console</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" class="form-control" required min="1" max="10" value="1">
+            </div>
+            
+            <fieldset class="form-group-fieldset">
+                <legend>Payment Method</legend>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="payment_method" value="Credit Card" required>
+                        Credit Card
+                    </label>
+                    <label>
+                        <input type="radio" name="payment_method" value="PayPal">
+                        PayPal
+                    </label>
+                    <label>
+                        <input type="radio" name="payment_method" value="Crypto Wallet">
+                        Crypto Wallet
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group-fieldset">
+                <legend>Add-ons</legend>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="add_on_warranty" value="3-Year Extended Warranty">
+                        3-Year Extended Warranty (+$49.99)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="add_on_gift" value="Premium Gift Wrap">
+                        Premium Gift Wrap (+$9.99)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="add_on_express" value="Express Overnight Delivery">
+                        Express Overnight Delivery (+$19.99)
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="order_notes">Additional Setup Notes</label>
+                <textarea id="order_notes" name="order_notes" class="form-control" rows="4" placeholder="Specific configurations, delivery instructions..."></textarea>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn" aria-label="Review Order Details">Review Order Details</button>
+                <button type="reset" class="btn btn-secondary" aria-label="Clear Form">Clear Form</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Aura Tech Store. Designed with precision.</p>
+            <a href="#top" class="back-to-top" aria-label="Scroll back to top of the page">Back to Top</a>
+        </div>
+    </footer>
+    
+    <!-- Link the external JS here at the end of the body -->
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
