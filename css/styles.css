@@ -4,7 +4,7 @@
   --panel-bg: #161b22;
   --panel-border: #30363d;
   --text-main: #c9d1d9;
-  --text-muted: #8b949e;
+  --text-muted: #a3b2c6;
   --primary-color: #58a6ff;
   --primary-hover: #3182ce;
   --font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -128,7 +128,7 @@ main {
 .btn {
   display: inline-block;
   background-color: var(--primary-color);
-  color: #fff;
+  color: #040d21;
   padding: 0.8rem 1.5rem;
   border-radius: 6px;
   text-decoration: none;
