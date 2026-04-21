@@ -4,7 +4,11 @@
   --panel-bg: #161b22;
   --panel-border: #30363d;
   --text-main: #c9d1d9;
+<<<<<<< HEAD
   --text-muted: #a3b2c6;
+=======
+  --text-muted: #b1bac4;
+>>>>>>> 0460001 ( updated theme colors, improved accessibility, and added form autocomplete attributes)
   --primary-color: #58a6ff;
   --primary-hover: #3182ce;
   --font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
